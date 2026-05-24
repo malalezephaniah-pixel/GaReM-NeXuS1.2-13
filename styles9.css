@@ -1,0 +1,392 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.15rem;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lora:wght@400;700&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e1e1e1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1abc9c;
+}
+
+
+header {
+    background: linear-gradient( to right, #16a085, #2c3e50, #e1e1e1, #f7ff99, #ff9a8b, #1abc9c );
+ 
+    padding:  20px 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    animation: headerAnimation 2s ease-out;
+}
+
+@keyframes headerAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #16a085;
+    animation: fadeInUp 2s ease-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+a {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #2c3e50;
+    transform: translateY(-3px);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+.container section {
+    width: 48%;
+    transition: all 0.3s ease;
+}
+
+
+section h2, section h3 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+button {
+    background-color: #16a085;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #1abc9c;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.parallax {
+    background-image: url('https://source.unsplash.com/1920x1080/?nature,water');
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.card:hover {
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+
+h1, h2, h3 {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.faq {
+    margin-top: 40px;
+}
+
+.faq h3 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.faq .answer {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+i {
+    font-size: 2rem;
+    color: #16a085;
+    transition: all 0.3s ease;
+}
+
+i:hover {
+    transform: scale(1.2);
+    color: #2c3e50;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 2;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+
+footer a {
+    color: #16a085;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+button.bounce {
+    animation: bounce 1s infinite;
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.typing-effect {
+    display: inline-block;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #16a085;
+    animation: typing 4s steps(40) infinite;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container section {
+        width: 100%;
+    }
+
+    section h2, section h3 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+
+@keyframes gradientEffect {
+    0% {
+        background: linear-gradient(45deg, #ff9a8b, #f7ff99);
+    }
+    50% {
+        background: linear-gradient(45deg, #f7ff99, #ff9a8b);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff9a8b, #f7ff99);
+    }
+}
+
+.card:hover {
+    animation: gradientEffect 2s infinite;
+}
+
+section:hover {
+    transform: rotateY(5deg) rotateX(5deg);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes loadingSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-icon {
+    display: inline-block;
+    font-size: 3rem;
+    animation: loadingSpin 2s infinite linear;
+}
+
+
+.parallax-bg {
+    background-image: url('https://source.unsplash.com/1920x1080/?nature,city');
+    background-size: cover;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    animation: parallaxMove 20s linear infinite;
+}
+
+@keyframes parallaxMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
